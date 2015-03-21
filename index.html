@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+
+    <title>Adhouse</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css"/>
+    <!-- inicio favicon -->
+    <link rel="icon" type="image/png" href="../static/img/favicon/256x256.png"/>
+    <!-- For iPhone 4 Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/img/favicon/114x114.png">
+    <!-- For iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/img/favicon/72x72.png">
+    <!-- For iPhone: -->
+    <link rel="apple-touch-icon-precomposed" href="../static/img/favicon/57x57.png">
+    <!-- end favicon -->
+    <!--[if lt IE 9]>
+      <script src="../static/js/html5.js"></script>
+      <script src="../static/js/PIE.js"></script>
+      <script src="../static/js/respond.js" type="text/javascript"></script>
+      <script src="../static/js/rem.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="../static/css/ie.css"/>
+    <![endif]-->
+
+  </head>
+  <body>
+      <div class="wrapper" id="inicio">
+        <header class="header">
+          <div class="w954">
+            <nav class="nav">
+              <a href="#inicio" class="logo">
+                <img class="logowhite" src="images/logo-blanco.png" alt="">
+                <img class="logored" src="images/logo.png" alt="">          
+              </a>
+              <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#cursos">Nuestros Cursos</a></li>
+                <li><a href="#">Cursos de Especialización</a></li>
+                <li><a href="#pre_inscribete"class="m-inscribete">Pre Inscríbete</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <section class="m-background section" id="nosotros">
+          <div class="speech">
+            <div class="icons">
+              <ul>
+                <li>
+                  <div class="item">
+                    <p></p>
+                    <span class="icon-flecha"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <p>aprendelo</p>
+                    <span class="icon-aprende"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <p>hazlo</p>
+                    <span class="icon-hazlo"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <p>muéstralo</p>
+                    <span class="icon-muestra"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="principal-text">
+              <p>
+                Ser bueno <strong>no es suficiente</strong>
+              </p>
+            </div>
+            <div class="text-bottom"> <!-- Emulando ubicación de Cursos -->
+              <p>© Derechos Reservados Adhouse escuela digital 2015</p>
+            </div>
+          </div>
+          <em class="light_left"></em>
+          <em class="light_right"></em>
+          <div class="slider">
+          	<div class="banner" style="background-image: url('/images/banner1.jpg')"></div>
+          	<div class="banner" style="background-image: url('/images/banner2.jpg')"></div>
+          	<div class="banner" style="background-image: url('/images/banner3.jpg')"></div>
+          	<div class="banner" style="background-image: url('/images/banner4.jpg')"></div>
+          </div>
+          <img class="luzleft" src="images/bg_light_left.png" alt="">
+          <img class="luzright" src="images/bg_light_right.png" alt="">
+          <img class="imgleft" src="images/item-left.png" alt="">
+          <img class="imgright" src="images/item-right.png" alt="">
+        </section>
+        <section class="cursosAll section">
+          <div class="w1060">
+            <div class="box_cursos"  id="cursos">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ex quo quos, debitis quas a eveniet, ipsa inventore accusamus excepturi voluptates ea ab delectus eligendi doloribus quis, expedita explicabo labore.
+            </div>
+          </div>
+        </section>
+        <section class="box_map section">
+          <img class="nubesLeft"src="images/bg_nubes_left.png">
+          <img class="nubesRight"src="images/bg_nubes_right.png">
+          <div id="google-map" ></div>
+          <div class="box_form" id="pre_inscribete">
+            <form action="">
+              <div class="cnt-form">
+                <h1>Pre Inscríbete</h1>
+                <div class="subject">
+                  <label for=""> *Elige tu taller :</label>
+                  <select id="selectbasic" name="selectbasic">
+                    <option value="1">Diseño de interfaces</option>
+                    <option value="2">Diseño de interfaces mobile</option>
+                    <option value="3">Aplicaciones mobile</option>
+                    <option value="4">Animación HTML Canvas</option>
+                    <option value="5">Juegos para Mobile</option>
+                  </select>
+                </div>
+                <div class="name">
+                  <label for="">*Nombre y apellido :</label>
+                  <input type="text" name="txt_nombre" id="txt_nombre" required="">
+                </div>
+                <div class="email">
+                  <label for="">*E mail :</label>
+                  <input type="text" name="txt_telefono" id="txt_telefono" required="">
+                </div>
+                <div class="questions">
+                  <label for="">*Consultas :</label>
+                  <textarea name="" id="" cols="40" rows="3" name="txt_comentario" id="txt_comentario"> </textarea>
+                </div>
+                <strong>(*) Datos obligatorios</strong>
+              </div>
+              <input type="button" value="Reserva aquí" valign="bottom" id="reservar" name="reservar" onclick="validateform();" ></input>
+            </form>
+            <ul>
+              <li>
+                <div class="m-items first">
+                  <img src="images/direccion.png" alt="">
+                  <h2>Dirección</h2>
+                  <p>Parque Gonzales prada 378, Magdalena del mar.</p>
+                </div>
+              </li>
+              <li>
+                <div class="m-items second">
+                  <img src="images/email.png" alt="">
+                  <h2>Email</h2>
+                  <p>preinscribete@adhouse-capacita.com</p>
+                  <p>Inbox Fanpage Adhouse</p>
+                </div>
+              </li>
+              <li>
+                <div class="m-items third">
+                  <img src="images/phone.png" alt="">
+                  <h2>Teléfono</h2>
+                  <a tel="997280043" target="_blank">997280043</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer class="footer section">
+          <div class="box_footer w954">
+            <a class="logo" href="home.html"></a>
+            <div class="cnt_footer">
+                <ul>
+                    <li>
+                        <a href="">
+                          Nosotros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Nuestros Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Cursos de Especialización
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Pre Inscríbete
+                        </a>
+                    </li>
+                </ul>
+                                
+                <div class="social-icon">
+                    <ul>
+                        <li>
+                            <div class="fb">
+                                <a href=""></a>
+                            </div>
+                          </li>
+                        <li>
+                            <div class="tw">
+                                <a href=""></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wt">
+                                <a href=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="credito">
+                    <p>
+                        © Derechos Reservados Adhouse escuela digital 2015
+                        by Adhouse soft
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="icon-one"></span>
+                        </li>
+                        <li>
+                            <span class="icon-two"></span>
+                        </li>
+                        <li>
+                            <span class="icon-three"></span>
+                        </li>
+                    </ul>
+
+                    <div class="arrow-top">
+                        <a class="nav-item" href="#inicio"></a>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </footer>
+
+      </div>
+
+    <script type="text/javascript" src="js/jquery1.11.2.min.js"></script>    
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
