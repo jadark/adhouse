@@ -187,7 +187,6 @@ $(document).ready(function(){
 		//console.log("activó hash nosotros");
     }
 
-	
 	/*$(".nav a").click(function(){
 		$(this).addClass("active");
 		$(this).siblings().removeClass("active");	
@@ -209,13 +208,38 @@ $(document).ready(function(){
 
 	});
 
+	/**** TABS */ 
+	function iTabs(ptab, ctab){
+		var ptab,ctab;
+		$(ptab).on('click',function(sinclick){
+			sinclick.preventDefault();
+			var i = $(this).index();
+			$(ptab).removeClass('active');
+			$(this).addClass('active');
+			$(ctab).css('display','none');
+			$(ctab).eq(i).fadeIn('1000');
+			$(this).find('.contTab').fadeIn('1000');
+			$(this).find('.contTab').fadeOut('1000');
+			//console.log($(this).find('.contTab').fadeIn('100'));
+			if($(this).hasClass('miClase')) {
+				$(this).parent().parent().parent().parent('.cursosAll').css('background','#9b9b9b' );
+
+			}else{
+				$(this).parent().parent().parent().parent('.cursosAll').css('background','#ddd');
+			}
+		});
+		$(ptab).eq(0).click();
+	}
+
+	iTabs('.pesTab','.contTab');
+
 
 });
 
 $(window).scroll(function(){
    var scroll = $(window).scrollTop();                
    if (scroll > 0 ) {
-      $('.header').css( 'background-color', 'rgba(0,0,0,0.45)');
+      $('.header').css( 'background-color', 'rgba(0,0,0,0.65)');
       $('.header .logo').addClass('activeLogo');
    }
     if (scroll <= 0 ) {

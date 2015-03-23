@@ -193,8 +193,8 @@ html{
             @include opacity (0);
         }
         .logowhite{
-            width: 60%;
-            left: 24px;
+            width: 50%;
+            left: 34px;
             @include opacity (1);
         }
     }
@@ -236,7 +236,7 @@ html{
 .footer{
     background-color: #7247ea;
     .box_footer{
-        padding-top: 3%;
+        padding-top: 2.5%;
         .logo{
             width: 97px;
             height: 92px;
@@ -366,10 +366,66 @@ html{
         .box_cursos{
             min-height: 700px;
             width: 100%;
-            background-color: #000;
             position: relative;
-            top:  -60px;
-            opacity:0.5;
+            top:  -70px;
+            h1{
+                font-family: 'HelveticaNeueLTStd-Th';
+                font-size: 50px;
+                color:#ffffff;
+                text-align: center;
+                margin: 0 0 30px 0;
+                padding: 15px 10px 0 0;
+                line-height: 40px;
+            }
+        }
+        .content{
+            text-align: center;
+            font-size: 0;
+            .box{
+                display: inline-table;
+                width: 33%;
+                background-color: #cecece;
+                font-size: 0;
+                a{
+                    display: block;
+                    width: 100%;
+                    min-height: 350px;
+                    color:#ffffff;
+                    text-decoration: none;
+                    text-align: left;
+                    padding: 6% 12%;
+                    h2{
+                        color: #fff;
+                        font-size: 43px;
+                        line-height: 43px;
+                        margin:0 0 20px 0;
+                        letter-spacing: 2px;
+                        font-family: 'HelveticaNeueLTStd-Lt';
+                        font-weight: normal;
+                        min-height: 130px;
+
+                    }
+                    p{
+                        margin: 0 0 0 0;
+                        font-size: 14px;
+                        font-family: "HelveticaNeueLTStd-Md";
+                        letter-spacing: 0.6px;
+                        span{
+                            font-family: "HelveticaNeue-Light";
+                        }
+                    }
+
+                }
+            }
+            .ux{
+                background-color: #506682;
+            }
+            .planning{
+                background-color: #009062;
+            }
+            .interface{
+                background-color: #cc7264;
+            }
         }
     }
 }
@@ -415,6 +471,7 @@ html{
         top:5em;
         max-width: 613px;
         margin: 0 auto 0 auto;
+        z-index: 5;
     }
     form{
         max-width: 613px;
@@ -531,3 +588,36 @@ html{
         }
     }
 }
+
+
+//Tabs
+.secPes{
+    display: block;
+    height: 30px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    .pesTab {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        line-height: 22px;
+        font-weight: 300;
+        padding: 0 0 0 26px;
+        height: 22px;
+        font-size: 14px;
+        text-decoration: none;
+        color:#3C3C3B;
+        &:hover{
+        }
+    }
+    .active {
+        background-position: 0 -21px;
+    }
+}
+.contTab{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: none;
+    margin: 10px 0 0 0;
+}
+// fin de los tabs
