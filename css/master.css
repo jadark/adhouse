@@ -1183,8 +1183,14 @@ html {
 }
 
 /* CURSOS ALL */
+.bg_especialista {
+  background-image: url("../images/bg_especialista.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .cursosAll {
-  max-height: 580px;
+  min-height: 580px;
   background-color: #ddd;
 }
 .cursosAll .w1060 {
@@ -1192,7 +1198,7 @@ html {
   z-index: 10;
 }
 .cursosAll .w1060 .box_cursos {
-  min-height: 700px;
+  min-height: 500px;
   width: 100%;
   position: relative;
   top: -70px;
@@ -1223,7 +1229,7 @@ html {
   color: #ffffff;
   text-decoration: none;
   text-align: left;
-  padding: 6% 12%;
+  padding: 10% 12%;
 }
 .cursosAll .w1060 .content .box a h2 {
   color: #fff;
@@ -1252,6 +1258,24 @@ html {
 }
 .cursosAll .w1060 .content .interface {
   background-color: #cc7264;
+}
+.cursosAll .w1060 .content .ui {
+  background-color: #00cf78;
+}
+.cursosAll .w1060 .content .portdigi {
+  background-color: #a000c6;
+}
+.cursosAll .w1060 .content .interface_mov {
+  background-color: #7247ea;
+}
+.cursosAll .w1060 .content .app_mov {
+  background-color: #00b7c7;
+}
+.cursosAll .w1060 .content .html5 {
+  background-color: #ff6c4d;
+}
+.cursosAll .w1060 .content .game_mov {
+  background-color: #9dd438;
 }
 
 .box_map {

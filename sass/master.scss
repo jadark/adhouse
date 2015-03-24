@@ -357,14 +357,19 @@ html{
 }
 
 /* CURSOS ALL */
+.bg_especialista{
+    background-image: url("../images/bg_especialista.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .cursosAll{
-    max-height: 580px;
+    min-height: 580px;
     background-color: #ddd;
     .w1060{
         position: relative;
         z-index: 10;
         .box_cursos{
-            min-height: 700px;
+            min-height: 500px;
             width: 100%;
             position: relative;
             top:  -70px;
@@ -393,7 +398,7 @@ html{
                     color:#ffffff;
                     text-decoration: none;
                     text-align: left;
-                    padding: 6% 12%;
+                    padding: 10% 12%;
                     h2{
                         color: #fff;
                         font-size: 43px;
@@ -425,6 +430,25 @@ html{
             }
             .interface{
                 background-color: #cc7264;
+            }
+            //cursos General
+            .ui{
+                background-color: #00cf78;
+            }
+            .portdigi{
+                background-color: #a000c6;
+            }
+            .interface_mov{
+                background-color: #7247ea;
+            }
+            .app_mov{
+                background-color: #00b7c7;
+            }
+            .html5{
+                background-color: #ff6c4d;
+            }
+            .game_mov{
+                background-color: #9dd438;
             }
         }
     }

@@ -221,11 +221,11 @@ $(document).ready(function(){
 			$(this).find('.contTab').fadeIn('1000');
 			$(this).find('.contTab').fadeOut('1000');
 			//console.log($(this).find('.contTab').fadeIn('100'));
-			if($(this).hasClass('miClase')) {
-				$(this).parent().parent().parent().parent('.cursosAll').css('background','#9b9b9b' );
+			if($(this).hasClass('linkEspe')) {
+				$(this).parent().parent().parent().parent().addClass('bg_especialista');
 
 			}else{
-				$(this).parent().parent().parent().parent('.cursosAll').css('background','#ddd');
+				$(this).parent().parent().parent().parent('.cursosAll').removeClass('bg_especialista');
 			}
 		});
 		$(ptab).eq(0).click();
